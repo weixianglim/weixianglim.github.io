@@ -1,0 +1,47 @@
+body {
+    background: rgb(211, 211, 211);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    background: rgb(0,0,0);
+    color: white;
+    margin: 0px; /* All borders */
+    padding: 0;
+}
+section {
+    background: rgb(255, 255, 255);
+    margin: 20px 40px; /* Top and bottom */
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Default */
+}
+footer {
+    background: rgb(0,0,0);
+    color: white;
+    margin: 20px 40px; /* Clockwise: top, right, botom, left */
+    padding: 10px;
+}
+div {
+    background: rgb(137, 255, 196);
+    margin: auto;
+    width: 100px;
+     /* 
+         - block is default for div 
+        - cannot set width for block (default fullscreen)
+        - inline block solution
+        - instead, we can also add flex to parent (section)
+    */
+    /*
+    display: inline-block;
+    width: 100px;
+    height: 30px; */
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;	/* No bullet points */
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+}

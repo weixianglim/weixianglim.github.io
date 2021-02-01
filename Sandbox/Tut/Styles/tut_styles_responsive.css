@@ -1,0 +1,237 @@
+body {
+    background: rgb(163, 158, 158);
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+
+li {
+    display: inline-block;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    color: white;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background: black;
+    color: gray;
+    text-align: center;
+    padding: 10px 10px; /* Top Bottom */
+}
+
+/* All Box classes in sections have flex layout */
+section.Box {
+    display: flex;
+}
+
+/* All Box > div elements have margin 1, padding 10 */
+.Box div { 
+    margin: 1px;
+    padding: 10px;
+}
+
+/* All section.Letters > div elements have gray bg */
+section.Letters div {  
+    background: gray;
+    width: 100%;
+}
+
+/* All section.Numbers > div elements have gray bg */
+section.Numbers div {
+    background: green;
+    width: 100%;
+}
+
+/* All even number IDs have 200% font size.
+   Note: For IDs, only 1 per html page. 
+         > 1 same ID may work in some browsers, but
+         is not guaranteed across all browsers.
+         Just use classes.
+*/
+#EvenNumbers {
+    font-size: 200%;
+}
+
+/* Highlights hovers etc. with pseudo classes */
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+header {
+    text-align: center;
+    /*text-transform: uppercase;*/
+    background-color: black;
+    background-image: url("../Images/background.jpg");
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    height: 330px;
+}
+header .logo {
+    width: 300px;
+    display: inline-block;
+    background: rgba(0,0,0,0);
+    font-size: 0;
+}
+header .logo a {
+    background-image: url("../Images/razor.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 85px;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+}
+header .mobile {
+    display: none;
+}
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    height: 80px;
+}
+
+/* Media for mobile/desktop header */
+@media screen and (max-width: 636px)
+{
+    header .mobile {
+        display: inline-block;
+    }
+    header .desktop {
+        display: none;
+    }
+    nav {
+        background: rgba(0, 0, 0, 0.5);
+        height: 109px;
+    }
+}
+@media screen and (max-width: 648px)
+{
+    header {
+        height: 210px;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    header {
+        height: 170px;
+    }
+}
+
+/* Media wide screen */
+@media screen and (min-width: 820px)
+{
+    header {
+        background-position: 0px -30px; /* x y */
+    }
+}
+@media screen and (min-width: 870px)
+{
+    header {
+        background-position: 0px -50px; /* x y */
+    }
+}
+@media screen and (min-width: 920px)
+{
+    header {
+        background-position: 0px -70px; /* x y */
+    }
+}
+@media screen and (min-width: 960px)
+{
+    header {
+        background-position: 0px -90px; /* x y */
+    }
+}
+@media screen and (min-width: 1010px)
+{
+    header {
+        background-position: 0px -110px; /* x y */
+    }
+}
+@media screen and (min-width: 1100px)
+{
+    header {
+        background-position: 0px -130px; /* x y */
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    header {
+        background-position: 0px -160px; /* x y */
+    }
+}
+@media screen and (min-width: 1320px)
+{
+    header {
+        background-position: 0px -200px; /* x y */
+    }
+}
+
+.Pictures {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.Pictures figure {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+.Pictures figure img {
+    border-radius: 50%;
+    box-shadow: rgb(63, 61, 61) 10px 10px 10px; /* Color, Offset X, Offset Y, Blur */
+    width: 200px;
+}
+
+/* Media
+   If () is true, this new CSS will be added to the page.
+   Order matters.
+   Max-width: screen width <= value
+   Min-width: screen width >= value
+   To know screen px info, Ctrl + Shift + l to open developer tools.
+   Or right click > Inspect on site. 
+ */
+/* @media screen and (max-width: 800px) {
+    .Pictures {
+        background: pink;
+    }
+}
+@media screen and (max-width: 400px) {
+    .Pictures {
+        background: red;
+    }
+} */
+
+@media screen and (max-width: 696px)
+{
+    .Pictures {
+        display: block;
+    }
+    .Pictures figure img {
+        margin: 20px;
+    }
+}

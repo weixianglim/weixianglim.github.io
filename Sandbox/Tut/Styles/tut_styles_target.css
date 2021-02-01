@@ -1,0 +1,76 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+} 
+
+li {
+    display: inline-block;
+    background: rgb(33, 253, 235);
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+}
+
+/* All Box classes in sections have flex layout */
+section.Box {
+    display: flex;
+}
+
+/* All Box > div elements have margin 1, padding 10 */
+.Box div { 
+    margin: 1px;
+    padding: 10px;
+}
+
+/* All section.Letters > div elements have gray bg */
+section.Letters div {  
+    background: gray;
+    width: 100%;
+}
+
+/* All section.Numbers > div elements have gray bg */
+section.Numbers div {
+    background: green;
+    width: 100%;
+}
+
+/* All even number IDs have 200% font size.
+   Note: For IDs, only 1 per html page. 
+         > 1 same ID may work in some browsers, but
+         is not guaranteed across all browsers.
+         Just use classes.
+*/
+#EvenNumbers {
+    font-size: 200%;
+}
+
+/* Pseudo classes 
+   First-child of all li elements. In this case,
+   the Home button.
+   Used commonly to align 1st element left
+   by setting left margin to 0.
+*/
+li:first-child {
+    background: rgb(255, 195, 83);
+    margin-left: 0;
+}
+
+/* Highlights hovers etc. with pseudo classes */
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+li:hover {
+    background: rgb(13, 202, 155);
+}
+li:first-child:hover {
+    background:rgb(184, 141, 56);
+}

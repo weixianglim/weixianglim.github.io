@@ -1,0 +1,24 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 1.0;
+}
+
+header {
+    background: green;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+li input {
+    display: none;
+}
+
+.editMode span {
+    display: none;
+}
+
+.editMode input {
+    display: initial;
+}

@@ -1,0 +1,127 @@
+body {
+    background: rgb(163, 158, 158);
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    color: white;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background: black;
+    color: gray;
+    text-align: center;
+    padding: 10px 10px; /* Top Bottom */
+}
+
+/* All Box classes in sections have flex layout */
+section.Box {
+    display: flex;
+}
+
+/* All Box > div elements have margin 1, padding 10 */
+.Box div { 
+    margin: 1px;
+    padding: 10px;
+}
+
+/* All section.Letters > div elements have gray bg */
+section.Letters div {  
+    background: gray;
+    width: 100%;
+}
+
+/* All section.Numbers > div elements have gray bg */
+section.Numbers div {
+    background: green;
+    width: 100%;
+}
+
+/* All even number IDs have 200% font size.
+   Note: For IDs, only 1 per html page. 
+         > 1 same ID may work in some browsers, but
+         is not guaranteed across all browsers.
+         Just use classes.
+*/
+#EvenNumbers {
+    font-size: 200%;
+}
+
+/* Highlights hovers etc. with pseudo classes */
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+header {
+    text-align: center;
+    /*text-transform: uppercase;*/
+    background-color: black;
+    background-image: url("../Images/background.jpg");
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    height: 330px;
+}
+header .logo {
+    width: 300px;
+    display: inline-block;
+    background: rgba(0,0,0,0);
+    font-size: 0;
+}
+header .logo a {
+    background-image: url("../Images/razor.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 85px;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+}
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    height: 80px;
+}
+.Pictures {
+    display: flex;
+    flex-direction: row;
+}
+.Pictures figure {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+.Pictures figure img {
+    border-radius: 50%;
+    box-shadow: rgb(63, 61, 61) 10px 10px 10px; /* Color, Offset X, Offset Y, Blur */
+    width: 200px;
+}
