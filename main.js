@@ -51,4 +51,5 @@ function FadeOut(element, fadeSpeed)
 }
 
 /* Fade in first text on load */
-FadeIn(mainText[0], fadeInSpeed);
+//FadeIn(mainText[0], fadeInSpeed);
+ window.location = "https://weixianglim.github.io/home";
